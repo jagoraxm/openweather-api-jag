@@ -1,0 +1,29 @@
+{
+  "name": "openweather-api-jag",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jagoraxm/openweather-api-jag.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jagoraxm/openweather-api-jag/issues"
+  },
+  "homepage": "https://github.com/jagoraxm/openweather-api-jag#readme",
+  "dependencies": {
+    "axios": "^0.26.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2",
+    "nock": "^13.2.4"
+  }
+}
