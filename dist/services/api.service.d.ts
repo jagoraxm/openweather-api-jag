@@ -31,4 +31,5 @@ export declare class ApiService {
      * @param codPais código de país, ejemplo 'mx' de México
      */
     buscarPorCodigoPostal(cp: string, codPais?: string): Promise<any>;
+    private requestAPI;
 }

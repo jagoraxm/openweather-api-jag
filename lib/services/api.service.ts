@@ -55,7 +55,7 @@ export class ApiService {
         // Llamada a la API
         const url = `${URL_LOCALHOST}${CURRENT}${filtro}${parametros}`;
 
-        return axios.get(url).then(d => d.data).catch(error => error);
+        return this.requestAPI(url);
     }
 
     /**
@@ -76,11 +76,7 @@ export class ApiService {
         // Llamada a la API
         const url = `${URL_LOCALHOST}${CURRENT}${filtro}${parametros}`;
 
-        return axios.get(url).then(
-            e => e.data
-        ).catch(
-            error => error
-        )
+        return this.requestAPI(url);
     }
 
     /**
@@ -101,10 +97,10 @@ export class ApiService {
         // Llamada a la API
         const url = `${URL_LOCALHOST}${CURRENT}${filtro}${parametros}`;
 
-        return axios.get(url).then(
-            e => e.data
-        ).catch(
-            error => error
-        )
+        return this.requestAPI(url);
+    }
+
+    private requestAPI(url: string) {
+        return axios.get(url).then(d => d.data).catch(error => error);
     }
 }

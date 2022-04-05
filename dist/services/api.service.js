@@ -51,7 +51,7 @@ class ApiService {
         }
         // Llamada a la API
         const url = `${constants_1.URL_LOCALHOST}${constants_1.CURRENT}${filtro}${parametros}`;
-        return axios_1.default.get(url).then(d => d.data).catch(error => error);
+        return this.requestAPI(url);
     }
     /**
      * Obtener el tiempo mediante la localización
@@ -69,7 +69,7 @@ class ApiService {
         }
         // Llamada a la API
         const url = `${constants_1.URL_LOCALHOST}${constants_1.CURRENT}${filtro}${parametros}`;
-        return axios_1.default.get(url).then(e => e.data).catch(error => error);
+        return this.requestAPI(url);
     }
     /**
      * Obtener clima mediante el código postal del lugar
@@ -87,7 +87,10 @@ class ApiService {
         }
         // Llamada a la API
         const url = `${constants_1.URL_LOCALHOST}${constants_1.CURRENT}${filtro}${parametros}`;
-        return axios_1.default.get(url).then(e => e.data).catch(error => error);
+        return this.requestAPI(url);
+    }
+    requestAPI(url) {
+        return axios_1.default.get(url).then(d => d.data).catch(error => error);
     }
 }
 exports.ApiService = ApiService;
