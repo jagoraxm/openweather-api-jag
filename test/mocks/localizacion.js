@@ -1,0 +1,32 @@
+module.exports = {
+    coord: { lon: 150.652, lat: -33.8473 },
+    weather: [
+        { id: 800, main: "Clear", description: "cielo claro", icon: "01d" },
+    ],
+    base: "stations",
+    main: {
+        temp: 12.22,
+        feels_like: 11.4,
+        temp_min: 10.26,
+        temp_max: 15.86,
+        pressure: 1016,
+        humidity: 73,
+        sea_level: 1016,
+        grnd_level: 1007,
+    },
+    visibility: 10000,
+    wind: { speed: 1.34, deg: 274, gust: 1.23 },
+    clouds: { all: 0 },
+    dt: 1649103401,
+    sys: {
+        type: 2,
+        id: 2008571,
+        country: "AU",
+        sunrise: 1649103115,
+        sunset: 1649144892,
+    },
+    timezone: 36000,
+    id: 2156345,
+    name: "Mulgoa",
+    cod: 200,
+};

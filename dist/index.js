@@ -14,9 +14,5 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const APIKEY = '---';
-//const url = 'https://api.openweathermap.org/data/2.5/weather?q=London,uk&units=metric&lang=es&appid=' + APIKEY;
-//const url = 'https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&units=metric&lang=es&appid=' + APIKEY;
-//const url = 'https://api.openweathermap.org/data/2.5/weather?zip=03630,mx&units=metric&lang=es&appid=' + APIKEY;
 __exportStar(require("./services/api.service"), exports);
 __exportStar(require("./interfaces/api.interface"), exports);
